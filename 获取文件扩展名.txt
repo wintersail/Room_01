@@ -1,0 +1,21 @@
+How to get the file extension?
+
+1.Regular Expression
+
+	function getFileExtension1(filename) {
+	  return (/[.]/.exec(filename)) ? /[^.]+$/.exec(filename)[0] : undefined;
+	}
+	
+2.String split method
+
+	function getFileExtension2(filename) {
+  return filename.split('.').pop();
+  }
+  
+3.String slice, lastIndexOf methods
+
+	function getFileExtension3(filename) {
+  return filename.slice((filename.lastIndexOf(".") - 1 >>> 0) + 2);
+  }
+  
+  the third is more robust.
