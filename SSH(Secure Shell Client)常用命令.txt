@@ -1,7 +1,0 @@
-SSH(Secure Shell Client)常用命令
-1.cd /                 返回根目录
-2.cd ..                返回上级目录
-3.ls                   列出文件名
-4.ps -ef               查看server进程
-5.kill [id]            杀进程
-6../startup.sh start   启动startup.sh(首先要进入该目录)
